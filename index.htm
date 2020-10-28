@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://media-public.canva.com/MADpjr4-SvY/1/thumbnail_large.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://teachablemachine.withgoogle.com/models/6qo37tcRi/model.json"></script>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1 class="heading text-uppercase">my family</h1>
+        <img src="https://media-public.canva.com/MADpjr4-SvY/1/thumbnail_large.png" id="fam-pic" alt="">
+        <br><br>
+        <div class="wrapper">
+            <div id="sister" class="flex">
+                <h3>Sister</h3>
+                <img src="https://media-public.canva.com/MADpjvkJ2s8/1/thumbnail_large.png" id="sis-pic" alt="">
+                <h5 class="text text-secondary">Prerna Gupta</h5>
+            </div>
+            <div id="me" class="flex">
+                <h3>Me</h3>
+                <img src="https://media-public.canva.com/MADpjpqmcVk/1/thumbnail_large.png" id="my-pic" alt="">
+                <h5 class="text text-secondary">Shourya Sagar Gupta</h5>
+            </div>
+        </div>
+        <br><br>
+        <h4 class="text" style="color: #00f;">Webcam Preview</h4>
+        <div id="output"></div>
+        <br><br>
+        <button class="btn btn-success" onclick="snap();">Snap Photo</button>
+        <br><br>
+        <div id="picture"></div>
+        <br><br>
+        <button class="btn btn-info">Identify Photo</button>
+        <br><br>
+        <div class="results">
+            <div class="row">
+                <h6 style="display: inline-block;">Its</h6>
+                <span id="person"></span>
+            </div>
+            <div class="row">
+                <h6 style="display: inline-block;">Accuracy Rate:</h6>
+                <progress max="1" value=""></progress>
+            </div>
+        </div>
+    </div></center>
+</body>
+<script src="main.js"></script>
+</html>

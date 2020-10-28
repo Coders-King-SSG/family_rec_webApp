@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Montserrat:wght@500&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3, h1 {
+    font-family: 'Grenze Gotisch', cursive!important;
+}
+
+.heading {
+    text-decoration: wavy black underline;
+}
+
+body {
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    overflow-x: hidden;
+}
+
+#fam-pic {
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(340deg);
+    animation: infinite rotate 2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+#mom-pic, #sis-pic, #dad-pic, #my-pic {
+    width:50px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+@media screen and (max-width:700px) {
+    #fam-pic {
+        display: none;
+    }
+}
+
+.wrapper .flex {
+    height: 218.38px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    border-right: black 2px solid;
+    border-left: black 2px solid;
+    padding: 0px 5px 0px 5px;
+}
+
+#output {
+    height: 250px;
+    width: 360px;
+    border: dotted 3px black;
+}
+
+.results {
+    display: none;
+}
